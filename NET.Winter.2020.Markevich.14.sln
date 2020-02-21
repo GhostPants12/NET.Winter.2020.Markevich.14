@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumerableSequencesTest", "EnumerableSequencesTest\EnumerableSequencesTest.csproj", "{6A4F5300-6442-4FC2-9804-D0D5CE3FFA90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumerableSequences", "EnumerableSequences\EnumerableSequences.csproj", "{5794A528-7C0B-416E-8837-7F9F4733B06B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A4F5300-6442-4FC2-9804-D0D5CE3FFA90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4F5300-6442-4FC2-9804-D0D5CE3FFA90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4F5300-6442-4FC2-9804-D0D5CE3FFA90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4F5300-6442-4FC2-9804-D0D5CE3FFA90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5794A528-7C0B-416E-8837-7F9F4733B06B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5794A528-7C0B-416E-8837-7F9F4733B06B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5794A528-7C0B-416E-8837-7F9F4733B06B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5794A528-7C0B-416E-8837-7F9F4733B06B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F72409DB-B181-40B8-8AA9-26BA2C0AC4BD}
+	EndGlobalSection
+EndGlobal
