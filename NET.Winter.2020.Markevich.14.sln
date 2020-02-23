@@ -7,9 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumerableSequencesTest", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumerableSequences", "EnumerableSequences\EnumerableSequences.csproj", "{5794A528-7C0B-416E-8837-7F9F4733B06B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "BinarySearch\BinarySearch.csproj", "{C8DF2491-E284-47D8-BD76-434ACEF5B049}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearch", "BinarySearch\BinarySearch.csproj", "{C8DF2491-E284-47D8-BD76-434ACEF5B049}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTests", "BinarySearchTests\BinarySearchTests.csproj", "{9BC82D4E-3C43-49EF-B895-9199967EBD2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearchTests", "BinarySearchTests\BinarySearchTests.csproj", "{9BC82D4E-3C43-49EF-B895-9199967EBD2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearchTree", "BinarySearchTree\BinarySearchTree.csproj", "{B742D244-8F80-4EED-AC8D-44A5AD917F1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTreeTests", "BinarySearchTreeTests\BinarySearchTreeTests.csproj", "{2D7F8FA8-181A-40E8-9638-80B6C0399859}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{9BC82D4E-3C43-49EF-B895-9199967EBD2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BC82D4E-3C43-49EF-B895-9199967EBD2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BC82D4E-3C43-49EF-B895-9199967EBD2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B742D244-8F80-4EED-AC8D-44A5AD917F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B742D244-8F80-4EED-AC8D-44A5AD917F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B742D244-8F80-4EED-AC8D-44A5AD917F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B742D244-8F80-4EED-AC8D-44A5AD917F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D7F8FA8-181A-40E8-9638-80B6C0399859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D7F8FA8-181A-40E8-9638-80B6C0399859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D7F8FA8-181A-40E8-9638-80B6C0399859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D7F8FA8-181A-40E8-9638-80B6C0399859}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
