@@ -36,10 +36,12 @@ namespace BinarySearchTests
         }
 
         [Test]
-        public void BinarySearchTests_IncorrectValue()
+        public void BinarySearchTests_IncorrectArray()
         {
             int[] arr = new int[] { 1, 5, 3, 4, 2, 6 };
-            Assert.Throws<ArgumentException>(() => arr.BinarySearch(5));
+            int expected = -1;
+            var actual = arr.BinarySearch(5);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

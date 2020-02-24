@@ -15,21 +15,15 @@ namespace BinarySearch
         /// <param name="elementToSearch">The element to search.</param>
         /// <returns>Index of found element if it its found, -1 if it isn't.</returns>
         /// <exception cref="System.ArgumentException">Thrown when sequence is not sorted.</exception>
-        public static int BinarySearch<T>(this IEnumerable<T> sequence, T elementToSearch)
+        public static int BinarySearch<T>(this T[] array, T elementToSearch, IComparer<T> comparer = null)
         {
-            var defaultComparer = Comparer<T>.Default;
-            T[] array = sequence.ToArray();
-            T[] arrayCopy = sequence.ToArray();
-            Array.Sort(arrayCopy);
-            int left = 0;
-            int right = sequence.Length();
-            for (int i = 0; i < array.Length; i++)
+            if (comparer is null)
             {
-                if (!array[i].Equals(arrayCopy[i]))
-                {
-                    throw new ArgumentException($"{nameof(sequence)} is not sorted.");
-                }
+                comparer = Comparer<T>.Default;
             }
+
+            int left = 0;
+            int right = array.Length;
 
             while (left <= right)
             {
@@ -40,49 +34,18 @@ namespace BinarySearch
                     return middle;
                 }
 
-                if (defaultComparer.Compare(elementToSearch, array[middle]) < 0)
+                if (comparer.Compare(elementToSearch, array[middle]) < 0)
                 {
                     right = middle - 1;
                 }
 
-                if (defaultComparer.Compare(elementToSearch, array[middle]) > 0)
+                if (comparer.Compare(elementToSearch, array[middle]) > 0)
                 {
                     left = middle + 1;
                 }
             }
 
             return -1;
-        }
-
-        /// <summary>Lengthes the specified sequence.</summary>
-        /// <param name="sequence">The sequence.</param>
-        /// <returns>Length of enumerable sequence.</returns>
-        private static int Length(this IEnumerable sequence)
-        {
-            int result = 0;
-            foreach (var element in sequence)
-            {
-                result++;
-            }
-
-            return result;
-        }
-
-        /// <summary>Converts to array.</summary>
-        /// <typeparam name="T">Type of sequence's elements.</typeparam>
-        /// <param name="sequence">The sequence.</param>
-        /// <returns>Array of sequence's elements.</returns>
-        private static T[] ToArray<T>(this IEnumerable<T> sequence)
-        {
-            int i = 0;
-            T[] array = new T[sequence.Length()];
-            foreach (var element in sequence)
-            {
-                array[i] = element;
-                i++;
-            }
-
-            return array;
         }
     }
 }
